@@ -1,0 +1,253 @@
+*{
+box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+
+body {
+    margin: 0; /* Reset default margin for body */
+    background-color: #F9F9F9;
+    font-family: 'Hanken Grotesk', 'Nunito', 'Poppins', sans-serif;
+}
+.home-heading {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.head-heading {
+    font-weight: 700;
+}
+
+
+
+/* Initial styles for the bell icon */
+
+
+.head-icon {
+    background-color: #76808A;
+    border-radius: 50%;
+    padding: 10px; /* Adjusted padding */
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+
+.nav {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-start;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.nav-inside-1 {
+    font-size: 15px;
+    display: flex;
+    text-align: center;
+    padding-top:7px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:7px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    margin: 5px;
+    cursor: pointer;
+    align-items:center;
+}
+
+.nav-inside {
+    color: #a59999;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.cards{
+    margin: 15px;
+    padding:5px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding-bottom:0px;
+    
+}
+.container {
+    
+    margin: 10px;
+}
+
+.text-cards {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cards-inside {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.cards-image {
+    flex: 1 1 calc(50% - 10px); /* Two cards per row */
+    padding: 5px;
+    border-radius: 12px;
+    text-align: center;
+    
+}
+
+.img-atm {
+    width: 60%;
+    height: 30%px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.img-atm-text {
+    font-size: 14px; /* Adjusted font size to a more appropriate value */
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.activate{
+    color: orange;
+    margin-top: -5px;
+    font-size: 14px;
+    font-weight: 12px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .cards-image {
+        flex: 1 1 100%; /* One card per row on smaller screens */
+    }
+}
+
+
+
+ /* wealth */
+
+
+ .wealth {
+    background-color: #FFFFFF;
+    margin: 15px;
+    padding:5px;
+    border-radius: 20px;
+  }
+  
+  .wealth-text {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .money {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .money-cards {
+    margin-top: 10px;
+    
+  }
+  
+  .cards {
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .money-card-img{
+    height: 100%;
+    border-radius: 50%;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 50%;
+    display: flex;
+    
+    align-items: center;
+    color: #b5a7a7;
+    font-weight: bold;
+    
+  }
+  
+  .info {
+    margin-left: 10px;
+  }
+  .info p {
+    margin: 2px 0; /* Adjust margin to decrease the vertical gap */
+  }
+  .cash-bal{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .add-button {
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    padding-top:7px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:8px;
+    border-radius: 18px;
+    background-color: #a79cfb;
+    margin: 5px;
+    display: flex;
+    align-items:center;
+  }
+  
+  .all-icon {
+    width: 20px; /* Initial size */
+    height: 20px; /* Initial size */
+    transition: transform 0.3s, color 0.3s; /* Add transition for smooth animation */
+}
+
+/* Hover styles for the bell icon */
+.all-icon:hover {
+    color: blue; /* Change color to blue on hover */
+    transform: scale(1.2) rotate(5deg); /* Increase size and rotate slightly on hover */
+}
+
+.simple-icon{
+   
+    transition: transform 0.3s, color 0.3s; 
+}
+.simple-icon:hover {
+     /* Change color to blue on hover */
+    transform: scale(1.1); /* Increase size and rotate slightly on hover */
+}
+.simple-text{
+    transition: transform 0.3s, color 0.3s; 
+}
+.simple-text:hover {
+    color: blue;/* Change color to blue on hover */
+   transform: scale(1.2);
+    /* Increase size and rotate slightly on hover */
+}
